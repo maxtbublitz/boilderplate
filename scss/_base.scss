@@ -1,10 +1,39 @@
 html{
 	font-family: $basefont;
 	color: white;
+	padding: 3em;
 }
 
 body{
 	background-color: green;
 	margin-right: 2%;
 	margin-left: 2%;
+}
+
+nav{
+	// border-bottom-style: solid;
+	// border-bottom-width: .2em;
+	ul{
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		padding-left: 2em;
+		padding-right: 2em;
+		li{
+			a{
+				text-decoration: none;
+				color: $basecolor;
+			} //a
+		} //li
+	} //ul
+} //nav
+
+h2 {
+	text-align: center;
+}
+
+.main, .main2, .sidebar{
+	p{
+		margin-left: 2em;
+	}
 }

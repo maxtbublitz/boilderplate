@@ -1,3 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=K2D");
+.site {
+  display: grid;
+  grid-column-gap: 3em;
+  grid-row-gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  /*s*/
+  grid-template-areas: "head head head" "nava nava nava" "main main sidebar" "main2 main2 sidebar" "foot foot foot";
+}
+
+.head {
+  grid-area: head;
+  border-style: solid;
+  text-align: center;
+}
+
+.nava {
+  grid-area: nava;
+  border-style: solid;
+}
+
+.main {
+  grid-area: main;
+  border-style: solid;
+}
+
+.main2 {
+  grid-area: main2;
+  border-style: solid;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  border-style: solid;
+}
+
+.foote {
+  grid-area: foot;
+  border-style: solid;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,7 +46,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=K2D");
 html {
   line-height: 1.15;
   /* 1 */
@@ -423,12 +463,33 @@ textarea {
 html {
   font-family: "K2D", sans-serif;
   color: white;
+  padding: 3em;
 }
 
 body {
   background-color: green;
   margin-right: 2%;
   margin-left: 2%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+.main p, .main2 p, .sidebar p {
+  margin-left: 2em;
 }
 
 /*
